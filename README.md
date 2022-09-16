@@ -6,18 +6,17 @@
 
 - Written a python script to query data from Dune Analytics and save it in a csv file
 - Forked some dashboards in Dune Analytics
-Python script : [Data Collection Dune Script]: https://github.com/Mohd-Taqiuddin/Data-Collection-Bounty-Metamorphosis-/blob/main/data_collection_dune.py
-[Dune Analytics Dashboard]: https://dune.com/taqi
+- Python script : [Data Collection Dune Script]: https://github.com/Mohd-Taqiuddin/Data-Collection-Bounty-Metamorphosis-/blob/main/data_collection_dune.py
+- [Dune Analytics Dashboard]: https://dune.com/taqi
 
 
 ## Data Collection from Forta
 
 - Used forta graphql api to download data in a csv file
 - Downloaded data from Forta Agent for Phishing Attacks via ERC20 approvals, Flashloan Detection Bot, Sandwich Attack Agent (Uniswap V2), Forta Large Balance Decrease Bot,. bots.
-
+- [Forta graphql api sandbox]: https://studio.apollographql.com/sandbox/explorer
 
 ## Data collection from CryptoScamDB
 
 - Used cryptoscamdb API to fetch data about scams
 - written python scripts to query data and save it in a csv file
-
