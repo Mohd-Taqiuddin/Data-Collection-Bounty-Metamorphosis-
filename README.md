@@ -6,8 +6,8 @@
 
 - Written a python script to query data from Dune Analytics and save it in a csv file
 - Forked some dashboards in Dune Analytics
-- Python script : [Data Collection Dune Script]: https://github.com/Mohd-Taqiuddin/Data-Collection-Bounty-Metamorphosis-/blob/main/data_collection_dune.py
-- [Dune Analytics Dashboard]: https://dune.com/taqi
+- Python script Data Collection Dune: https://github.com/Mohd-Taqiuddin/Data-Collection-Bounty-Metamorphosis-/blob/main/data_collection_dune.py
+- Dune Analytics Dashboard: https://dune.com/taqi
 
 
 ## Data Collection from Forta
