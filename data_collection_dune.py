@@ -3,7 +3,7 @@ import pandas as pd
 import unicodecsv as csv
 
 # initialize client
-dune = DuneAnalytics('taqi', '927085481qQ!')
+dune = DuneAnalytics('username', 'password')
 
 # try to login
 dune.login()
