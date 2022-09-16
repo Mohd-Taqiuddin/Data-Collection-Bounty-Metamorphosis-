@@ -14,7 +14,7 @@
 
 - Used forta graphql api to download data in a csv file
 - Downloaded data from Forta Agent for Phishing Attacks via ERC20 approvals, Flashloan Detection Bot, Sandwich Attack Agent (Uniswap V2), Forta Large Balance Decrease Bot,. bots.
-- [Forta graphql api sandbox]: https://studio.apollographql.com/sandbox/explorer
+- [Forta graphql api sandbox]:  https://studio.apollographql.com/sandbox/explorer
 
 ## Data collection from CryptoScamDB
 
