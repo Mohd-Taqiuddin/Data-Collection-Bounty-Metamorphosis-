@@ -21,3 +21,6 @@
 
 - Used cryptoscamdb API to fetch data about scams
 - written python scripts to query data and save it in a csv file
+- scripts: https://github.com/Mohd-Taqiuddin/Data-Collection-Bounty-Metamorphosis-/blob/main/CryptoScamDB%20Data/cryptoscamDB.py <br>
+https://github.com/Mohd-Taqiuddin/Data-Collection-Bounty-Metamorphosis-/blob/main/CryptoScamDB%20Data/cryptoscamDB-blacklisted%20domains.py <br>
+https://github.com/Mohd-Taqiuddin/Data-Collection-Bounty-Metamorphosis-/blob/main/CryptoScamDB%20Data/cryptoscamDB%20malicious-ips.py
