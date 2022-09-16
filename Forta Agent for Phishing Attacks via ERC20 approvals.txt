@@ -1,0 +1,32 @@
+Forta Agent for Phishing Attacks via ERC20 approvals
+Description
+Transferring tokens to Web3 applications usually requires an approve transaction before the actual transfer, since the contract needs the right to pull funds from the user and use them on its behalf. Given said that, having users approving token transfers to contracts is a regular behavior. However, approving token transfers to EOAs (Externally Owned Account) addresses can be considered as a suspicious behavior since this kind of transaction is not needed for tokens transfers between EOAs.
+
+Making token transfer approvals to EOAs has been seen as a characteristic behavior of phishing attacks on Web3 applications, like the one happened to BadgerDAO on December 2021. In that case, the front-end was manipulated in the way users were approving token transfers to the attacker's EOA address instead of the correct contract address. The attacker was able to drain over $120 million in various forms of wBTC and ERC20 assets.
+
+This agent detects ERC20 token transfers approvals to EOAs addresses. It takes into account two kind of approvals:
+
+function approve(address spender, uint256 amount): the sender of the transaction approves the spender to move amount of tokens on its behalf.
+function increaseAllowance(address spender, uint256 addedValue): the sender of the transaction increases the allowance granted to the spender in addedValue tokens.
+If there are more than 10 approvals during the fixed period of time of 1 day, the behavior is considered as suspicious and thus, a possible ERC20 Phishing Attack.
+
+Configuration
+The agent allows to configure two parameters used to identify suspicious behaviors:
+
+MINIMUM_NUMBER_OF_APPROVALS: It is the minimum number of token transfer approvals to EOA addresses in order to consider a behavior as suspicious (10 by default).
+OBSERVATION_PERIOD_DURATION: It is the period duration (in blocks) of observation of token transfer approvals (6000 blocks by default, which is around 1 day).
+Therefore, the agent will trigger an alert if it detects more than MINIMUM_NUMBER_OF_APPROVALS during the period of time given by OBSERVATION_PERIOD_DURATION. You can find the configuration file of these parameters here,
+
+Supported Chains
+Ethereum
+List any other chains this agent can support e.g. BSC
+Alerts
+Describe each of the type of alerts fired by this agent
+
+ERC20-PHISHING-ATTACK-1
+
+Fired when a suspicious behavior has been detected: more than 10 token transfer approvals have been made during a day.
+
+Severity is always set to high since further investigation should be done
+
+Type is always set to suspicious

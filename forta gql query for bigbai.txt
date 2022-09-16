@@ -1,0 +1,67 @@
+gql query:
+query($input: AlertsInput) {
+  alerts(input: $input) {
+    alerts {
+      addresses
+      contracts {
+        address
+        name
+        projectId
+      }
+      createdAt
+      description
+      hash
+      metadata
+      name
+      projects {
+        contacts {
+          generalEmailAddress
+          securityEmailAddress
+        }
+        name
+        id
+        social {
+          coingecko
+          everest
+          github
+          twitter
+        }
+        token {
+          address
+          chainId
+          decimals
+          name
+          symbol
+        }
+        website
+      }
+      protocol
+      severity
+      scanNodeCount
+      source {
+        transactionHash
+        block {
+          number
+          hash
+          timestamp
+          chainId
+        }
+        bot {
+          id
+          name
+        }
+      }
+      findingType
+    }
+  }
+}
+
+variables:
+{
+  "input": {
+    "bots": [
+      "0xfa86dfbf512ed96b1c065bd94868369259bded409912e06bfeb2cbab347b9a03"
+    ],
+    "first": 1500
+  }
+}

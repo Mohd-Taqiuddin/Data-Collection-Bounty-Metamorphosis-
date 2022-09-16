@@ -1,0 +1,4 @@
+block_time,name,original_amount,original_currency,usd_amount,nft_token_ids_array,number_of_items
+2022-04-25T17:21:34+00:00,Bored Ape Kennel Club,12.661,WETH,37082.29646,['8301'],1
+2022-04-25T17:20:00+00:00,Bored Ape Kennel Club,12.67,WETH,37059.1165,['4267'],1
+2022-04-25T17:18:53+00:00,Bored Ape Kennel Club,13.6,WETH,39779.32,['8663'],1

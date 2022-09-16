@@ -1,0 +1,19 @@
+# Sandwich Attack Agent (Uniswap V2)
+
+## Description
+
+Agent to detect sandwich attacks. Attacks are labeled as either a frontrunning or a sandwich attack.
+
+### Supported Chains
+
+Supports Ethereum main chain.
+
+### How it Works
+This agent evaluates each transaction to capture characteristics of a frontrunning or sandwich attack. The results of the analysis of each transaction is stored in a data structure which groups TXs by block. This is required as the TXs need to be ordered for the final analysis (i.e. the front run comes before the victim TX, etc.).
+
+When a block is called the entire list of blocks is evaluated. If both a frontrun and backrun TX are identified, then the alert is labeled a sandwich attack. If only the the front run attack is detected, the alert is defined as a frontrun. The effect on the victim is the same in either case.
+
+## Alerts
+Alerts are victim centric. The victim address is highlighted in the transaction.
+ - Frontrunning alert when attacker and victim TX are identified
+ - Sandwich alert when attacker, victim and backrun TX are identified
